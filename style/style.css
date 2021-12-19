@@ -241,8 +241,8 @@ button{
 /* Gallery Slider Style Below */
 
 .container{
-	width:70%;
-	height:42%;
+	width:85%;
+	max-width: 1000px;
 	margin: 0 auto;
 	overflow:auto;
 }
