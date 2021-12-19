@@ -2,6 +2,7 @@ html{
 	font-family: Helvetica;
 	color: black;	
 	text-align: center;
+	background: rgb(3, 3, 3);
 }
 
 main{
@@ -31,7 +32,7 @@ table{
 
 footer{
 	padding-top: 20px;
-	height: 300px;	
+	height: 20%;	
 	background: linear-gradient(grey, black);
 	color:white;
 }
