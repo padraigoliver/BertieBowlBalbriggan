@@ -241,13 +241,11 @@ button{
 /* Gallery Slider Style Below */
 
 .container{
-	width:85%;
+	width:100%;
 	max-width: 1000px;
 	margin: 0 auto;
 	overflow:auto;
 }
-
-
 
 .slider-inner{
 	width:100%;
