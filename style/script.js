@@ -164,11 +164,11 @@ if(document.getElementById('booking')) {
             dateError=false;
         }
 
-        // Check not more than 6 people per booking - max 6 per bowling lane
-        if(pplPerBooking > 6){
+        // Check not less than 1 & more than 6 people per booking - max 6 per bowling lane
+        if(pplPerBooking < 1 | pplPerBooking > 6){
             pplPerBookingError=true;
-            setErrorFor(no_adult,"You cannot have more than 6 people per booking");
-            setErrorFor(no_minor,"You cannot have more than 6 people per booking");
+            setErrorFor(no_adult,"You must have a total of between 1 & 6 people per booking");
+            setErrorFor(no_minor,"You must have a total of between 1 & 6 people per booking");
         }
         else
         {
