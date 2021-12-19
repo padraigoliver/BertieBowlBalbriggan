@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bertie Bowl - Services</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../style/style.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body> 
+		<header>
+			<nav class="navbar navbar-expand-sm fixed-top">
+				<a class="navbar-brand" href="../"><img src="../img/logo_white.svg" class="logo" alt="company logo for light background"/></a>
+				<button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>	
+				<div class="collapse navbar-collapse" id="navbarNav"> 
+					<ul class="navbar-nav ms-auto"> 
+					<!-- ms-auto - align navbar to right of page when fullscreen -->
+						<li class="nav-item"><a href="../"><figure><img src="../img/home.svg" alt="home icon"/><figcaption>Home</figcaption></figure></a>
+						<li class="nav-item"><a href="."><figure><img src="../img/services.svg" alt="service bell icon"/><figcaption>Services</figcaption></figure></a></li>
+						<li class="nav-item"><a href="../contact/"><figure><img src="../img/contact.svg" alt="phone icon"/><figcaption>Contact Us</figcaption></figure></a></li>
+						<li class="nav-item"><a href="../gallery/"><figure><img src="../img/gallery.svg" alt="photo video gallery icon"/><figcaption>Gallery</figcaption></figure></a></li>
+						<li class="nav-item"><a href="../booking/"><figure><img src="../img/booking.svg" alt="reservation book icon"/><figcaption>Booking</figcaption></figure></a></li>
+					</ul> 
+				</div>
+			</nav> 
+		</header> 
+		<main>
+			<section id="Service Accordion">
+				<h1>Bertie Brings You</h1>
+				<p>... all of the following ...</p>
+				<div class="accordion">
+					<div class="accordion-item">
+						<div class="item-header">
+							<h2 class="title">Bowling</h2>
+							<div class="icon">+</div>
+						</div>
+						<p class="text">Bertie's boasts 10 full-length lanes for the best bunch of bowlers Balbriggan can blossom!<br>A snip at €8 a game per adult & €6 per child (minor).</p>
+						<video class="text" controls width=75%>
+							<source src="../img/Bowling_shot.mp4" alt="Bowling Strike Video" type="video/mp4">Sorry, your browser doesn't support embedded videos.
+						</video>
+					</div>
+					<div class="accordion-item">
+						<div class="item-header">
+							<h2 class="title">Brunch</h2>
+							<div class="icon">+</div>
+						</div>
+						<p class="text">Before or after you bowl, Bertie's belle Berta can rustle you up a bacon & egg bagel, black pepper beef or bangers & mash by the bowl.</p>
+						<img src="../img/bangers&mash.jpg" alt="Bowl of Bangers & Mash" class="text img-fluid"/>
+					</div>
+					<div class="accordion-item">
+						<div class="item-header">
+							<h2 class="title">Best of Arcade</h2>
+							<div class="icon">+</div>
+						</div>
+						<p class="text">Regardless if you 'strike' it lucky on the bowling lane, if you've a few bob to 'spare', unleash the gaming beast in you at our arcade where the latest & greatest titles are beckoning you to our big blue machines.</p>
+						<img src="../img/bigbluemachine.png" alt="Big Blue Arcade Machine" class="text img-fluid"/>
+					</div>
+				</div>
+			</section>			
+		</main>
+		<footer>
+			<div class="row align-items-center">
+				<div class="col">
+					<a href="../booking/"><img src="../img/book_now.png" class="footer_img" alt="book now icon"/></a>
+				</div>
+				<div class="col" id="footer_contacts"><br>
+					<ul>
+						<li><img src="../img/phone.png" alt="phone icon"/>&emsp;01-925-6251</li>
+						<li><img src="../img/email.png" alt="email icon"/>&emsp;info@bbb.ie</li>
+						<li><img src="../img/pin.png" alt="location pin icon"/>&emsp;Bertie Bowl, Pin Alley, Balbriggan, Co. Dublin</li>	
+					</ul>				
+				</div>
+				<div class="col">
+					<a href="../"><img src="../img/logo_clear.svg" class="footer_img" alt="company logo for dark background"/></a>
+				</div>
+			</div>
+        </footer>
+		<script src="../style/script.js"></script>	
+	</body>
+</html>

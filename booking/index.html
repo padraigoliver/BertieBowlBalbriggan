@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bertie Bowl - Booking</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../style/style.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- JQuery plugin Date/Time picker obtained from https://www.jqueryscript.net/time-clock/jQuery-Date-Time-Picke-Plugin-Simple-Datetimepicker.html#google_vignette -->
+		<script src="../style/jquery.simple-dtpicker.js"></script>
+		<link type="text/css" href="../style/jquery.simple-dtpicker.css" rel="stylesheet">
+	</head>
+	<body id="booking"> 
+		<header>
+			<nav class="navbar navbar-expand-sm fixed-top">
+				<a class="navbar-brand" href="../"><img src="../img/logo_white.svg" class="logo" alt="company logo for light background"/></a>
+				<button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+					<div class="collapse navbar-collapse" id="navbarNav"> 
+					<ul class="navbar-nav ms-auto"> 
+					<!-- ms-auto - align navbar to right of page when fullscreen -->
+						<li class="nav-item"><a href="../"><figure><img src="../img/home.svg" alt="home icon"/><figcaption>Home</figcaption></figure></a>
+						<li class="nav-item"><a href="../services/"><figure><img src="../img/services.svg" alt="service bell icon"/><figcaption>Services</figcaption></figure></a></li>
+						<li class="nav-item"><a href="../contact/"><figure><img src="../img/contact.svg" alt="phone icon"/><figcaption>Contact Us</figcaption></figure></a></li>
+						<li class="nav-item"><a href="../gallery/"><figure><img src="../img/gallery.svg" alt="photo video gallery icon"/><figcaption>Gallery</figcaption></figure></a></li>
+						<li class="nav-item"><a href="."><figure><img src="../img/booking.svg" alt="reservation book icon"/><figcaption>Booking</figcaption></figure></a></li>
+					</ul> 
+				</div>
+			</nav> 
+		</header> 
+		<main>
+			<section id="form">
+				<h1>Booking</h1>
+				<p>Please complete the form below. A separate booking is necessary for each bowling lane required. A maximum of 6 players is permitted per lane.</p>
+				<form>
+					<fieldset>
+						<legend>Booking Form</legend>
+						<div class="form-control">
+							<label for="fName">First name:</label>
+							<input type="text" size="30" id="fName" name="fName" placeholder="e.g. Bill" onfocus="this.placeholder = ''" required>
+							<small>Error message</small>
+						</div>
+						<div class="form-control">
+							<label for="lName">Last name:</label>
+							<input type="text" size="30" id="lName" name="lName" placeholder="e.g. Bailey" onfocus="this.placeholder = ''" required>
+							<small>Error message</small>
+						</div>
+						<div class="form-control">
+							<label for="email">Email:</label>
+							<input type="email" size="30" id="email" name="email" placeholder="e.g. billbailey@yahoo.com" onfocus="this.placeholder = ''" required>
+							<small>Error message</small>
+						</div>						
+						<div class="form-control">
+							<label for="phone">Telephone Number:</label>
+							<input type="tel" size="30" id="phone" name="phone" placeholder="e.g. 0871234567" onfocus="this.placeholder = ''" required>
+							<small>Error message</small>
+						</div>
+						<div class="form-control">
+							<label for="date">Booking Period:</label>
+							<input type="text" size="30" id="date" name="date" placeholder="Click to choose a date & time" onfocus="this.placeholder = ''" required>
+							<small>Error message</small>
+						</div>						
+						<div class="form-control">
+							<label for="no_adult">Number of Adults:</label>
+							<input type="number" id="no_adult" name="no_adult" placeholder="0-6" onfocus="this.placeholder = ''" min="0" max="6" required>
+							<small>Error message</small>
+						</div>
+
+						<div class="form-control">
+							<label for="no_minor">Number of Minors:</label>
+							<input type="number" id="no_minor" name="no_minor" placeholder="0-6" onfocus="this.placeholder = ''" min="0" max="6" required>
+							<small>Error message</small>
+						</div>
+
+						<div class="form-control">
+							<label for="no_games">Number of Games:</label>
+							<input type="number" id="no_games" name="no_games" placeholder="1-3" onfocus="this.placeholder = ''"  min="1" max="3" required>
+							<small>Error message</small>
+						</div>
+						<!-- onfocus="this.placeholder = ''" clears the placeholder content once the mouse has been clicked on the field so it is obvious when a field has not been completed--> 
+						<!-- Reset button clears the form & reloads the webpage -->
+						<button type="reset" onclick="document.location.reload()">Clear</button>
+						<button type="submit">Submit</button>
+					</fieldset>
+				</form>
+			</section>
+			<section>
+				<!-- This section is not visible until the form is completed successfully after which it provides confirmation the booking is complete-->
+				<h3 id="confirmation"></h3>
+			</section>
+		</main>
+		<footer>
+			<div class="row align-items-center">
+				<div class="col">
+					<a href="../booking/"><img src="../img/book_now.png" class="footer_img" alt="book now icon"/></a>
+				</div>
+				<div class="col" id="footer_contacts"><br>
+					<ul>
+						<li><img src="../img/phone.png" alt="phone icon"/>&emsp;01-925-6251</li>
+						<li><img src="../img/email.png" alt="email icon"/>&emsp;info@bbb.ie</li>
+						<li><img src="../img/pin.png" alt="location pin icon"/>&emsp;Bertie Bowl, Pin Alley, Balbriggan, Co. Dublin</li>	
+					</ul>				
+				</div>
+				<div class="col">
+					<a href="../"><img src="../img/logo_clear.svg" class="footer_img" alt="company logo for dark background"/></a>
+				</div>
+			</div>
+        </footer>
+		<script src="../style/script.js"></script>	
+	</body>
+</html>
