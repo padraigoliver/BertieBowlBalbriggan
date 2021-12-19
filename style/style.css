@@ -181,7 +181,7 @@ footer li{
 	}
 	
     footer div{
-        display:flex auto;
+        display:flex;
         flex-direction:column;
    }
 }
